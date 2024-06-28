@@ -14,8 +14,8 @@
   width: 180px;
 }
 .hambuger {
-display: none;
-  color: #a50e0e;
+  display: none;
+  color: #FF0000;
   font-size: 25px;
   cursor: pointer;
 }
@@ -159,27 +159,32 @@ nav .navLink {
   .header .logo {
     width: 160px;
   }
-  .button{
-    display: block;
+  .m-nav.display {
+    display: flex !important;
   }
   .m-nav {
     width: 50%;
     display: none;
     flex-direction: column;
     padding: 20px 50px;
-    background: #fff;
+    background: #c8c7c7;
     position: absolute;
     top: 100%;
     right: 0;
     z-index: 999;
-    box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.09);
+    /* box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.09);
     -webkit-box-shadow: -2px -1px 15px 7px rgba(0, 0, 0, 0.163);
-    -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.129);
+    -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.129); */
+    transition: display 0.5s;
+    -webkit-transition: display 0.5s;
+    -moz-transition: display 0.5s;
+    -ms-transition: display 0.5s;
+    -o-transition: display 0.5s;
   }
 
   .m-nav .button {
+    margin-top: 10px;
     margin-left: 0% !important;
-    
   }
   nav {
     display: block;
@@ -194,9 +199,9 @@ nav .navLink {
     text-transform: uppercase;
   }
   .hambuger {
-  display: block;
+    display: block;
   }
-  
+
   .divider {
     height: 2.5px;
     width: 40px;
@@ -208,7 +213,7 @@ nav .navLink {
     -o-border-radius: 8px;
   }
   .HeadingOne {
-    text-align: center;
+    /* text-align: center; */
     font-size: 28px;
     font-weight: 700;
     /* line-height: 57px; */

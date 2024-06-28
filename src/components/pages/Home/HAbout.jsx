@@ -88,13 +88,13 @@ const HAbout = () => {
           </div>
 
           <div className="contentRight">
-            <div className="flex">
+            <div className="Hflex">
               <HeadingThree title="Who We Are" color="textred" />
               <Divider color="bgred" />
             </div>
             <HeadingOne title="Bus-Admin Class of 2016" color="textblack" />
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. x
               Molestiae, quaerat. Eum dicta tempora quae reprehenderit nam quam
               alias. Quisquam facere saepe minus officia nesciunt explicabo
               magni quibusdam earum aspernatur. Consequatur aut, alias,

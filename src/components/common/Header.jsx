@@ -8,31 +8,39 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { CgMenuGridR } from "react-icons/cg";
 import { MdCancel } from "react-icons/md";
 
-
 const Header = () => {
- const [menu, setMenu] = useState(true)
-  const showNav = () => {
-    setMenu(false)
-  }
-  const hideNav = () => {
-    setMenu(true);
+  const [menu, setMenu] = useState(false);
+  // const showNav = () => {
+  // const Nav = document.querySelector(".m-nav");
+  // Nav.classList.add("display");
+  //   setMenu(false)
+  // }
+  // const hideNav = () => {
+  //    const Nav = document.querySelector(".m-nav");
+  //    Nav.classList.remove("display");
+  //   setMenu(true);
 
-  }
-  
+  // }
+
   return (
     <div className="header">
       <img src={Logo} alt="The Executive16 Logo" className="logo" />
       <div className="hambuger">
-        {menu ? (
-          <CgMenuGridR onClick={showNav} />
+        {!menu ? (
+          <CgMenuGridR onClick={() => setMenu(true)} />
         ) : (
-          <MdCancel onClick={hideNav} />
+          <MdCancel onClick={() => setMenu(false)} />
         )}
       </div>
-      <div className="m-nav">
+      <div className={menu ? "m-nav display" : "m-nav"}>
         <nav>
           {Nav.map((nav) => (
-            <NavLink to={nav.path} key={nav.title} className="navLink">
+            <NavLink
+              to={nav.path}
+              key={nav.title}
+              className="navLink"
+              onClick={() => setMenu(false)}
+            >
               {nav.title}
             </NavLink>
           ))}
