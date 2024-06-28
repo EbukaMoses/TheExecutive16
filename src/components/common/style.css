@@ -1,0 +1,228 @@
+.header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 8%;
+  background: #fff;
+  box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: -2px -1px 15px 7px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.425);
+}
+.header .logo {
+  width: 180px;
+}
+.hambuger {
+display: none;
+  color: #a50e0e;
+  font-size: 25px;
+  cursor: pointer;
+}
+.m-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.m-nav .button {
+  margin-left: 30%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+nav .navLink {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.divider {
+  height: 2.5px;
+  width: 60px;
+  margin: 0 20px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.HeadingOne {
+  font-size: 46px;
+  font-weight: 700;
+  /* line-height: 57px; */
+  padding-top: 13px;
+  padding-bottom: 20px;
+}
+.HeadingTwo {
+  line-height: 70px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.HeadingThree {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.footercover {
+  position: relative;
+}
+.footer {
+  width: 100%;
+  background: #141414;
+  padding-top: 6%;
+}
+.footer .container {
+  margin: unset;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.footer-box .footer-logo img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-box {
+  color: #fff;
+}
+.footer ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  /* display: flex; */
+  justify-content: space-between;
+}
+.footer ul li {
+  display: block;
+  font-size: 14px;
+  line-height: 29.5px;
+}
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+.contact li a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.footer .socials {
+  display: flex;
+  margin-top: 20px;
+}
+.footer .socials a {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 10px;
+  font-style: italic;
+  padding: 1rem 0;
+}
+.footer .copyright a {
+  color: #868080;
+}
+.popup-card {
+  display: none;
+
+  position: relative;
+  /* display: flex; */
+  padding: 20px;
+  gap: 20px;
+  background: #141414;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.popup-card img {
+  width: 95px;
+  height: 95px;
+}
+.popup-card p {
+  color: #868080;
+  font-size: 13px;
+}
+
+/* --------------------------------MEDIA QUERY-------------------------------------- */
+@media screen and (max-width: 768px) {
+  .header .logo {
+    width: 160px;
+  }
+  .button{
+    display: block;
+  }
+  .m-nav {
+    width: 50%;
+    display: none;
+    flex-direction: column;
+    padding: 20px 50px;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 999;
+    box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: -2px -1px 15px 7px rgba(0, 0, 0, 0.163);
+    -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.129);
+  }
+
+  .m-nav .button {
+    margin-left: 0% !important;
+    
+  }
+  nav {
+    display: block;
+  }
+  nav .navLink {
+    width: 100%;
+    padding: 5% 0;
+    font-size: 11px;
+    font-weight: 700;
+    /* color: #fff; */
+    float: left;
+    text-transform: uppercase;
+  }
+  .hambuger {
+  display: block;
+  }
+  
+  .divider {
+    height: 2.5px;
+    width: 40px;
+    margin: 0 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  .HeadingOne {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    /* line-height: 57px; */
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .HeadingTwo {
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .HeadingThree {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}

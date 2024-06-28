@@ -1,0 +1,61 @@
+.aboutus .mt {
+  margin-top: unset;
+}
+.mission-container {
+  margin-top: -120px;
+  margin-bottom: 10%;
+}
+.missioncard {
+  padding: 45px;
+  background: #fff;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.295);
+}
+.missioncard:hover {
+  background: linear-gradient(45deg, #d44242 0%, #9a0000 100%);
+}
+.missioncard:hover .HeadingTwo,
+.missioncard:hover p {
+  color: #fff;
+}
+
+/* -----------------------------------------------------excoscard------------------------------------ */
+.excoscard {
+  position: relative;
+  width: fit-content;
+  max-width: 350px;
+  width: 100%;
+  height: 350px;
+  margin-top: 4rem;
+}
+.excoscard img {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border: 4px solid #970606;
+}
+.excoscard .details {
+  position: absolute;
+  bottom: -32px;
+  left: 15px;
+  right: 15px;
+  background: linear-gradient(#ff0000, #6b0505);
+  /* background: #ff0000; */
+  padding: 0.7rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.excoscard .details .HeadingTwo {
+  line-height: unset;
+  color: #fff;
+}
+.excoscard .details .HeadingThree {
+  color: #fff;
+}

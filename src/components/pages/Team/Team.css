@@ -1,0 +1,101 @@
+.teamcontent {
+  /* margin-top: rem; */
+}
+.team {
+  background: #f2f5f8;
+}
+.teamcard {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 2rem;
+
+  /* background: #fff; */
+  background: linear-gradient(#ff0000, #6b0505);
+
+  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.teamcard img {
+  width: 100%;
+}
+.team-details {
+  position: relative;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+.team-details h3 {
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+.team-details a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.team-details a span {
+  margin-left: 3px;
+}
+team-socials {
+  /* position: absolute; */
+  top: 10px;
+  right: 0;
+  /* margin-top: 10px;
+  margin-right: 19px; */
+}
+.team-socials a {
+  font-size: 18px;
+  margin-bottom: 0.5px;
+}
+
+/* ----------------------------------------------------------TEAM DETAILS-------------------------------------------------- */
+.member-card {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
+}
+.member-card .img img {
+  /* width: 100%; */
+  max-width: 350px;
+  margin-bottom: 10px;
+}
+.member-card .contact {
+  display: flex;
+  flex-direction: column;
+}
+.member-card .contact a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.member-card .socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+}
+.member-card .socials a {
+  font-size: 18px;
+}
+.hr {
+  margin: 10px 0;
+}
+@media screen and (max-width: 768px) {
+  .member-card {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+  }
+  .member-card .img img {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 10px;
+  }
+}
