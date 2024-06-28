@@ -23,7 +23,7 @@ const Hero = () => {
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
         >
-          Investment Planning
+          Executive Managers
         </h2>
         <p>
           Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

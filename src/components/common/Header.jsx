@@ -52,6 +52,7 @@ const Header = () => {
           path="/member"
           icon={<FaLongArrowAltRight />}
           bg="bgred"
+          onClick={() => setMenu(false)}
         />
       </div>
     </div>
