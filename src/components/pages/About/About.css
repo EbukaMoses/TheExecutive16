@@ -59,3 +59,9 @@
 .excoscard .details .HeadingThree {
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .excoscard {
+    margin: 40px auto 0;
+  }
+}

@@ -34,10 +34,10 @@ const Team = () => {
               </div>
               <div className="team-details flex-column">
                 <h3>Ebuka Moses</h3>
-                <a href="" className="flex item-center">
+                <a href="" className="Hflex item-center">
                   <FaBriefcase /> &nbsp; <span>Software Developer</span>
                 </a>
-                <a href="" className="flex item-center">
+                <a href="" className="Hflex item-center">
                   <IoLocation /> &nbsp; <span>Lagos</span>
                 </a>
               </div>

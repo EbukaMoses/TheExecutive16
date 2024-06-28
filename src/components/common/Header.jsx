@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Logo from "/images/logo.png";
 import "./style.css";
 import { Nav } from "../../utilis/data";
@@ -24,7 +24,9 @@ const Header = () => {
 
   return (
     <div className="header">
-      <img src={Logo} alt="The Executive16 Logo" className="logo" />
+      <Link to="/">
+        <img src={Logo} alt="The Executive16 Logo" className="logo" />
+      </Link>
       <div className="hambuger">
         {!menu ? (
           <CgMenuGridR onClick={() => setMenu(true)} />

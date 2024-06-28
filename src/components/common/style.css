@@ -15,7 +15,7 @@
 }
 .hambuger {
   display: none;
-  color: #FF0000;
+  color: #ff0000;
   font-size: 25px;
   cursor: pointer;
 }
@@ -163,10 +163,10 @@ nav .navLink {
     display: flex !important;
   }
   .m-nav {
-    width: 50%;
+    width: 100%;
     display: none;
     flex-direction: column;
-    padding: 20px 50px;
+    padding: 50px 50px;
     background: #c8c7c7;
     position: absolute;
     top: 100%;
@@ -192,7 +192,7 @@ nav .navLink {
   nav .navLink {
     width: 100%;
     padding: 5% 0;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     /* color: #fff; */
     float: left;
@@ -214,7 +214,7 @@ nav .navLink {
   }
   .HeadingOne {
     /* text-align: center; */
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     /* line-height: 57px; */
     padding-top: 8px;

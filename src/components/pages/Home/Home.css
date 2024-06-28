@@ -43,7 +43,7 @@
 }
 @media screen and (max-width: 768px) {
   .hero {
-    height: 80vh;
+    height: 60vh;
   }
   .heroContent {
     width: 85%;
@@ -323,6 +323,9 @@
     background-image: -ms-linear-gradient(0deg, #ff0000 0%, #ff0000 100%);
     border-radius: 10px;
 } */
+.whywe .rightSide .imgBox img {
+  width: 100%;
+}
 .playBox {
   position: absolute;
   /*top: 10px;
@@ -397,7 +400,7 @@
     max-width: 250px;
     width: 100%;
     height: 250px;
-    margin-top: 3rem;
+    margin: 3rem auto 0;
   }
   .whowehavecard img {
     max-width: 250px;
