@@ -43,17 +43,17 @@
 }
 @media screen and (max-width: 768px) {
   .hero {
-    height: 50vh;
+    height: unset;
   }
   .hero img {
     width: 100%;
-    /* object-fit: fill; */
+    object-fit: cover;
   }
   .heroContent {
     width: 85%;
     z-index: 9;
     position: absolute;
-    top: 15%;
+    top: 38%;
     left: 10%;
     right: 5%;
   }
@@ -199,6 +199,7 @@
   .TopBox {
     /* margin-top: -100px; */
     /* margin-bottom: 1200px; */
+    display: none;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
@@ -254,7 +255,7 @@
   }
 
   .HAboutContent {
-    /* margin-top: -25px; */
+    margin-top: 105px;
     display: flex;
     flex-direction: column;
     gap: 20%;
@@ -329,7 +330,7 @@
     border-radius: 10px;
 } */
 .whywe .rightSide .imgBox img {
-  width: 100%;
+  /* width: 100%; */
 }
 .playBox {
   position: absolute;
@@ -355,6 +356,9 @@
   -o-border-radius: 8px;
 }
 @media screen and (max-width: 768px) {
+  .whywe .rightSide .imgBox img {
+    width: 100%;
+  }
 }
 
 /* -------------------------------------------------------------WHO WE HAVE --------------------------------------------------- */
