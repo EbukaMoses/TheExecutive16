@@ -41,28 +41,31 @@ const WhatWeHave = () => {
             <div className="whowehavecard">
               <img src={chukz} alt="whow" />
               <div className="details flex-column justify-center item-center">
-                <HeadingTwo title="Chukwudi" color="textblack" />
+                <HeadingTwo
+                  title="Comrade Chukwudi Ifejika"
+                  color="textblack"
+                />
                 <HeadingThree title="Dept. President" color="textblack" />
               </div>
             </div>
             <div className="whowehavecard">
               <img src={ameh} alt="whow" />
               <div className="details flex-column justify-center item-center">
-                <HeadingTwo title="Ameh Joseph" color="textblack" />
-                <HeadingThree title="Student Rep. Councile" color="textblack" />
+                <HeadingTwo title="Hon. Ameh Joseph" color="textblack" />
+                <HeadingThree title="Student Rep. Council" color="textblack" />
               </div>
             </div>
             <div className="whowehavecard">
               <img src={ify} alt="whow" />
               <div className="details flex-column justify-center item-center">
-                <HeadingTwo title="Ifunanya Okoye" color="textblack" />
-                <HeadingThree title="Student Rep. Councile" color="textblack" />
+                <HeadingTwo title="Hon. Ifunanya Okoye" color="textblack" />
+                <HeadingThree title="Student Rep. Council" color="textblack" />
               </div>
             </div>
             <div className="whowehavecard">
               <img src={izzy} alt="whow" />
               <div className="details flex-column justify-center item-center">
-                <HeadingTwo title="Kalu Ezekeil" color="textblack" />
+                <HeadingTwo title="Kalu Ezekiel" color="textblack" />
                 <HeadingThree
                   title="Best Graduating Student"
                   color="textblack"

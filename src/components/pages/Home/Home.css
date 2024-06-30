@@ -22,14 +22,20 @@
   z-index: 1;
 }
 .heroContent {
-  width: 550px;
+  /* width: 550px; */
   z-index: 9;
   position: absolute;
-  top: 20%;
-  left: 15%;
+  bottom: 30%;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
 }
 .heroContent h2 {
+  text-align: center;
   font-size: 100px;
+  font-family: "Sacramento", cursive;
+  /* font-weight: 800; */
+  font-style: normal;
   line-height: 100px;
   font-weight: 800;
   color: #fff;

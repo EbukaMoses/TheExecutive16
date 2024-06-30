@@ -25,20 +25,21 @@
   align-items: center;
 }
 .form-side .form-header .unizik-logo {
-  width: 12%;
+  width: 15%;
 }
 .form-side .form-header .class-logo {
-  width: 9%;
+  width: 12%;
 }
 .form-side h1 {
-  font-size: 25px;
+  font-size: 23px;
   text-align: center;
   color: #a50e0e;
-  margin-bottom: 5px;
+  
+  margin-bottom: 2;
   text-transform: uppercase;
 }
 .form-side span {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   font-style: italic;
   text-align: center;

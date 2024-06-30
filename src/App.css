@@ -132,10 +132,13 @@ section {
   height: 30vh;
   padding: 0 10%;
   color: #fff;
-  font-size: 30px;
-  font-family: "Pacifico", cursive !important;
+  font-size: 50px;
+  font-family: "Sacramento", cursive;
   /* font-weight: 400; */
-  font-weight: 800;
+  font-style: normal;
+  /* font-family: "Pacifico", cursive !important; */
+  /* font-weight: 400; */
+  font-weight: 500;
   /* background: linear-gradient(#ff0000, #d16828); */
   background: #6b0505;
   box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
@@ -285,7 +288,7 @@ section {
   .container {
     margin: auto 10%;
   }
-  p{
+  p {
     text-align: justify;
   }
 }

@@ -19,16 +19,16 @@ const Hero = () => {
       <img src={hero} alt="The Executive Hero Image" />
       <div className="heroContent">
         <h2
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
+        // data-aos="fade-up"
+        // data-aos-offset="300"
+        // data-aos-easing="ease-in-sine"
         >
           Executive Managers
         </h2>
-        <p>
+        {/* <p>
           Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.
-        </p>
+        </p> */}
         {/* <Button title="Learn More" path="/" icon="" bg="bgred" /> */}
       </div>
     </div>
