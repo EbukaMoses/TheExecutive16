@@ -30,7 +30,7 @@ const Quote = () => {
         </div>
       </section>
       <section className="quoteslidercontainer">
-        <div className="container">
+        <div className="container-10">
           <Swiper
             slidesPerView={1}
             spaceBetween={30}

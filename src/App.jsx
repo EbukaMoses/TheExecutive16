@@ -13,6 +13,7 @@ import Contact from "./components/pages/Contact/Contact";
 import MarketDetail from "./components/pages/Market/MarketDetail";
 import TeamDetail from "./components/pages/Team/TeamDetail";
 import Login from "./components/pages/Login/Login";
+import Gallery from "./components/pages/Gallery/Gallery";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/blog-detail" element={<BlogDetails />} />
           <Route path="/market" element={<Market />} />
           <Route path="/market-detail" element={<MarketDetail />} />
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team />} />
           <Route path="/team-member" element={<TeamDetail />} />
           <Route path="/heroes" element={<Heroes />} />

@@ -8,12 +8,12 @@ import izzy from "/images/izzy.jpg";
 import chukz from "/images/chukz.jpg";
 import ameh from "/images/ameh.jpg";
 import ify from "/images/ify.jpg";
-import precious from "/images/precious.jpg";
+import ihuoma from "/images/ihuoma2.jpg";
 
 const WhatWeHave = () => {
   return (
     <section>
-      <div className="container padding">
+      <div className="container-10 padding">
         <div className="top flex-column justify-center item-center">
           <div className="Hflex">
             <Divider color="bgred" />
@@ -27,12 +27,12 @@ const WhatWeHave = () => {
             <div className="whowehavecard">
               <img src={mike} alt="whow" />
               <div className="details flex-column justify-center item-center">
-                <HeadingTwo title="Mike Uchendu" color="textblack" />
+                <HeadingTwo title="Comrade Mike Uchendu" color="textblack" />
                 <HeadingThree title="Course Rep" color="textblack" />
               </div>
             </div>
             <div className="whowehavecard">
-              <img src={precious} alt="whow" />
+              <img src={ihuoma} alt="whow" />
               <div className="details flex-column justify-center item-center">
                 <HeadingTwo title="Ihuoma" color="textblack" />
                 <HeadingThree title="Ass. Course Rep" color="textblack" />
@@ -65,7 +65,7 @@ const WhatWeHave = () => {
             <div className="whowehavecard">
               <img src={izzy} alt="whow" />
               <div className="details flex-column justify-center item-center">
-                <HeadingTwo title="Kalu Ezekiel" color="textblack" />
+                <HeadingTwo title="Comrade Kalu Ezekiel" color="textblack" />
                 <HeadingThree
                   title="Best Graduating Student"
                   color="textblack"

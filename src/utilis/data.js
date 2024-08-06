@@ -1,4 +1,3 @@
-
 import logo from "/images/icon2.png";
 
 export const Nav = [
@@ -11,15 +10,19 @@ export const Nav = [
     path: "/about",
   },
   {
-    title: "Market Place",
+    title: "Business",
     path: "/market",
   },
   {
-    title: "Team",
+    title: "Gallery",
+    path: "/gallery",
+  },
+  {
+    title: "Members",
     path: "/team",
   },
   {
-    title: "Fallen heroes",
+    title: "Our heroes",
     path: "/heroes",
   },
   {

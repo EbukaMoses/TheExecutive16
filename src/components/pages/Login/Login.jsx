@@ -36,7 +36,7 @@ const Login = () => {
   const [signIn, setSignin] = useState(true);
 
   return (
-    <section>
+    <section className="login">
       <div className="form-container">
         <div className="register-card">
           {/* <div className="logo-side">

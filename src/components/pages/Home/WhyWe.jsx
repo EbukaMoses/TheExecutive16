@@ -3,13 +3,13 @@ import HeadingThree from "../../common/HeadingThree";
 import Divider from "../../common/Divider";
 import HeadingOne from "../../common/HeadingOne";
 import Button from "../../common/Button";
-import whyus from "/images/whyus.jpg";
+import things from "/images/things.jpg";
 import { FaPlay, FaLongArrowAltRight } from "react-icons/fa";
 
 const WhyWe = () => {
   return (
     <section className="bggray mt">
-      <div className="container whywe padding flex">
+      <div className="container-10 whywe padding flex">
         <div className="leftSide">
           <div className="Hflex">
             <HeadingThree title="Why We Still Exist" color="textred" />
@@ -42,7 +42,7 @@ const WhyWe = () => {
 
         <div className="rightSide">
           <div className="imgBox">
-            <img src={whyus} alt="" />
+            <img src={things} alt="" />
             <div className="playBox">
               <FaPlay />
             </div>

@@ -6,25 +6,43 @@ import quote from "/images/quote.jpg";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import blog from "/images/blog.jpg";
+import blogdetail from "/images/blog-detail.jpg";
+import chukz from "/images/chukz.jpg";
 import NewCard from "../../common/NewCard";
 
 const BlogDetails = () => {
   return (
     <section>
-      <InnerPage title="Market Place" icon={true} />
+      <div className="blogdetail">
+        <div className="banner">
+          <div className="overlay"></div>
+          <img src={blogdetail} alt="" />
+        </div>
+        <div className="container author-detail">
+          <img src={chukz} alt="" />
+          <div className="name">
+            <h2>Ebuka Moses</h2>
+            <p>256k Views</p>
+            <div className="date">
+              <FaRegCalendarAlt /> 18 July, 2023
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <InnerPage title="Market Place" icon={true} /> */}
       <div className="container blog padding">
         <div className="main-content">
           <div className="img-container">
             <img src={quote} alt="" />
           </div>
-          <div className="blog-info">
+          {/* <div className="blog-info">
             <div className="admin">
               <FaRegUser /> Ebuka Moses
             </div>
             <div className="date">
               <FaRegCalendarAlt /> 18 July, 2023
             </div>
-          </div>
+          </div> */}
           <div className="blog-title">
             <h1>The State of the class and it's members</h1>
           </div>

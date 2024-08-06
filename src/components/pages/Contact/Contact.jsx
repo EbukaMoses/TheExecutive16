@@ -40,19 +40,19 @@ const Contact = () => {
             <form>
               <div className="input-group">
                 <FaUser />
-                <input type="text" value="" placeholder="" />
+                <input type="text" value="" placeholder="Full name" />
               </div>
               <div className="input-group">
                 <FaEnvelope />
-                <input type="text" value="" placeholder="" />
+                <input type="text" value="" placeholder="Email Address" />
               </div>
               <div className="input-group">
                 <FaPhoneSquareAlt />
-                <input type="text" value="" placeholder="" />
+                <input type="text" value="" placeholder="Phone Number" />
               </div>
               <div className="input-group">
                 <FaMessage className="message" />
-                <textarea name="" id="" placeholder=""></textarea>
+                <textarea name="" id="" placeholder="Message"></textarea>
               </div>
               <Button title="Submit" icon={<FaTelegramPlane />} bg="bgred" />
             </form>

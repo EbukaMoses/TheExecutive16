@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const News = () => {
   return (
     <section className="bggray">
-      <div className="container padding">
+      <div className="container-10 padding">
         <div className="top flex-column justify-center item-center">
           <div className="Hflex">
             <Divider color="bgred" />

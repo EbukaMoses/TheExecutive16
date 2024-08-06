@@ -19,7 +19,7 @@ import HeadingOne from "../../common/HeadingOne";
 const HAbout = () => {
   return (
     <>
-      <div className="container">
+      <div className="container-10">
         <div className="HAbout">
           <div className="TopBox">
             <div className="left">
@@ -69,7 +69,7 @@ const HAbout = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="container-10">
         <div className="HAboutContent">
           <div className="contentLeft">
             <div className="imgBox">
