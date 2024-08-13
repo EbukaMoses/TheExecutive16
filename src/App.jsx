@@ -14,6 +14,13 @@ import MarketDetail from "./components/pages/Market/MarketDetail";
 import TeamDetail from "./components/pages/Team/TeamDetail";
 import Login from "./components/pages/Login/Login";
 import Gallery from "./components/pages/Gallery/Gallery";
+import TabAbout from "./components/pages/Team/TabAbout";
+import TabEdu from "./components/pages/Team/TabEdu";
+import TabBiz from "./components/pages/Team/TabBiz";
+import TabHobby from "./components/pages/Team/TabHobby";
+import TabConnect from "./components/pages/Team/TabConnect";
+import TabBlog from "./components/pages/Team/TabBlog";
+import TeamTabLayOut from "./components/pages/Team/TeamTabLayOut";
 
 function App() {
   return (
@@ -29,7 +36,14 @@ function App() {
           <Route path="/market-detail" element={<MarketDetail />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/team-member" element={<TeamDetail />} />
+          {/* <Route path="/team-member" element={<TeamTabLayOut />} /> */}
+          {/* <Route path="/team-member" element={<TeamDetail />} /> */}
+          <Route path="/team-member" element={<TabAbout />} />
+          <Route path="/team-member/education" element={<TabEdu />} />
+          <Route path="/team-member/business" element={<TabBiz />} />
+          <Route path="/team-member/hobby" element={<TabHobby />} />
+          <Route path="/team-member/connect" element={<TabConnect />} />
+          <Route path="/team-member/blog" element={<TabBlog />} />
           <Route path="/heroes" element={<Heroes />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/member" element={<Login />} />

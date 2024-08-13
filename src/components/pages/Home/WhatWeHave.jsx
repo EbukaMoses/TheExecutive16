@@ -34,7 +34,7 @@ const WhatWeHave = () => {
             <div className="whowehavecard">
               <img src={ihuoma} alt="whow" />
               <div className="details flex-column justify-center item-center">
-                <HeadingTwo title="Ihuoma" color="textblack" />
+                <HeadingTwo title="Ihuoma Kamalu" color="textblack" />
                 <HeadingThree title="Ass. Course Rep" color="textblack" />
               </div>
             </div>

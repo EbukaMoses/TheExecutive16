@@ -53,6 +53,32 @@ const Market = () => {
             title="Gigonest Technology"
             subtitle="Web Design & Development, Graphic Design"
           />
+          <Link to="/market-detail">
+            <Marketcard
+              flyer={bizdp}
+              logo={bizlogo}
+              title="Gigonest Technology"
+              subtitle="Web Design & Development, Graphic Design"
+            />
+          </Link>
+          <Marketcard
+            flyer={bizflyer}
+            logo={bizlogo}
+            title="Gigonest Technology"
+            subtitle="Web Design & Development, Graphic Design"
+          />
+          <Marketcard
+            flyer={bizdp}
+            logo={bizlogo}
+            title="Gigonest Technology"
+            subtitle="Web Design & Development, Graphic Design"
+          />
+          <Marketcard
+            flyer={bizflyer}
+            logo={bizlogo}
+            title="Gigonest Technology"
+            subtitle="Web Design & Development, Graphic Design"
+          />
         </div>
       </div>
     </section>

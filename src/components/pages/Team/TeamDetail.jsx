@@ -2,6 +2,7 @@ import React from "react";
 import "./Team.css";
 import InnerPage from "../../common/InnerPage";
 import izzy2 from "/images/izzy2.jpg";
+import blogdetail from "/images/blog-detail.jpg";
 import { IoMdLocate } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
@@ -14,15 +15,16 @@ import {
   FaSquareXTwitter,
   FaLinkedin,
 } from "react-icons/fa6";
+import TeamTabLayOut from "./TeamTabLayOut";
 
 const TeamDetail = () => {
   return (
     <section>
-      <InnerPage title="Meet kalu Ezekiel" icon={true} />
-      <div className="container padding">
-        <div className="member-card">
+      <InnerPage title="kalu Ezekiel" icon={true} />
+      <div className="container">
+        <div className="member-card padding">
           <div className="img">
-            <img src={izzy2} alt="" />
+            <img src={blogdetail} alt="" />
 
             <div className="contact">
               <a href="">
@@ -38,7 +40,7 @@ const TeamDetail = () => {
                 Abuja
               </a>
             </div>
-<hr className="hr" />
+            <hr className="hr" />
             <div className="socials">
               <a href="/">
                 <FaSquareFacebook />
@@ -57,12 +59,14 @@ const TeamDetail = () => {
           <div className="desc">
             <h1>
               <FaRegUser />
-               Kalu Izzy
+              Kalu Izzy
             </h1>
             <h4>
               <SlBriefcase /> Software Developer
             </h4>
-            <br /> <hr /> <br />
+            <br />
+            <TeamTabLayOut></TeamTabLayOut>
+            <br />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
               iusto, magnam eos iste accusantium harum, rem quo corrupti sed qui

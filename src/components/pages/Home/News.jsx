@@ -17,7 +17,7 @@ const News = () => {
             <Divider color="bgred" />
           </div>
           <HeadingOne title="News Articule!" color="textblack" />
-        </div>
+        </div>  
         <div className="newscontent grid3">
           <Link to="/blog-detail">
             <NewCard

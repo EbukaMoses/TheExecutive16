@@ -24,6 +24,7 @@ const Hero = () => {
         // data-aos-easing="ease-in-sine"
         >
           Executive Managers
+          
         </h2>
         {/* <p>
           Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

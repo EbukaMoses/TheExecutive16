@@ -10,20 +10,18 @@ import { MdCancel } from "react-icons/md";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
-  // const showNav = () => {
-  // const Nav = document.querySelector(".m-nav");
-  // Nav.classList.add("display");
-  //   setMenu(false)
-  // }
-  // const hideNav = () => {
-  //    const Nav = document.querySelector(".m-nav");
-  //    Nav.classList.remove("display");
-  //   setMenu(true);
+  const [active, setActive] = useState(false);
 
-  // }
+  window.addEventListener("scroll", function () {
+    if (this.window.scrollY > 100) {
+      setActive(true);
+    } else {
+      setActive(false);
+    }
+  });
 
   return (
-    <div className="header">
+    <div className={`header ${active ? "activenav" : ""}`}>
       <Link to="/">
         <img src={Logo} alt="The Executive16 Logo" className="logo" />
       </Link>

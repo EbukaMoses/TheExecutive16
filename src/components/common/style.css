@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1% 8%;
+  z-index: 9999;
   background: #fff;
   box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: -2px -1px 15px 7px rgba(0, 0, 0, 0.5);
@@ -36,6 +37,17 @@ nav .navLink {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+}
+.activenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 3px solid #ff0000;
+  transition: all 5s;
+  -webkit-transition: all 5s;
+  -moz-transition: all 5s;
+  -ms-transition: all 5s;
+  -o-transition: all 5s;
 }
 .divider {
   height: 2.5px;
@@ -150,7 +162,7 @@ nav .navLink {
   height: 95px;
 }
 .popup-card p {
-  color: #868080;
+  color: #000;
   font-size: 13px;
 }
 

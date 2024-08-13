@@ -51,18 +51,31 @@ team-socials {
 }
 
 /* ----------------------------------------------------------TEAM DETAILS-------------------------------------------------- */
+.member-card .leftside {
+  width: 30%;
+}
+.member-card .rightside {
+  width: 70%;
+}
 .member-card {
   display: flex;
   gap: 40px;
+  margin: 20px 0px 100px;
   padding: 40px;
   box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
 }
-.member-card .img img {
+.member-card .img {
   /* width: 100%; */
-  max-width: 350px;
+  /* width: 400%; */
+  height: 350px;
   margin-bottom: 10px;
+  overflow: hidden;
+}
+.member-card .img img {
+  width: 100%;
+  object-fit: cover;
 }
 .member-card .contact {
   display: flex;
@@ -84,18 +97,69 @@ team-socials {
 .member-card .socials a {
   font-size: 18px;
 }
+.member-card .desc h1,
+.member-card .desc h4 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 .hr {
   margin: 10px 0;
 }
+/* -----------------nav tab------------------------  */
+.tab-navigation {
+  position: relative;
+}
+.tab-menu {
+  max-width: 100%;
+  white-space: nowrap;
+  border-bottom: 1px solid #444;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+.tab-menu::-webkit-scrollbar {
+  display: none;
+}
+.tab-btn {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  padding: 10px 20px;
+  background: #e6e6e6;
+  cursor: pointer;
+  user-select: none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transition: all 0.3;
+  -webkit-transition: all 0.3;
+  -moz-transition: all 0.3;
+  -ms-transition: all 0.3;
+  -o-transition: all 0.3;
+}
+.tab-btn.active {
+  background: #970101;
+  color: #fff;
+}
 @media screen and (max-width: 768px) {
+  .member-card .leftside,
+  .member-card .rightside {
+    width: 100%;
+  }
   .member-card {
     flex-direction: column;
-    gap: 20px;
-    padding: 40px;
+    gap: 1rem;
+    padding: 20px;
+  }
+  .member-card .img {
+    width: 100%;
+    height: 350px;
+    margin-bottom: unset;
+    overflow: hidden;
   }
   .member-card .img img {
     width: 100%;
-    max-width: 350px;
-    margin-bottom: 10px;
+    /* max-width: 350px;
+    margin-bottom: 10px; */
   }
 }

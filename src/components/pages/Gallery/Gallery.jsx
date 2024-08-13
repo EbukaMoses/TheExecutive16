@@ -1,12 +1,12 @@
 import React from "react";
 import "./Gallery.css";
 import InnerPage from "../../common/InnerPage";
-import { FaShoppingBag } from "react-icons/fa";
+import { AiFillPicture } from "react-icons/ai"
 
 const Gallery = () => {
   return (
     <section>
-      <InnerPage title="Market Place" icon={<FaShoppingBag />} />
+      <InnerPage title="Our Memories" icon={<AiFillPicture />} />
       <div className="container padding"></div>
     </section>
   );
