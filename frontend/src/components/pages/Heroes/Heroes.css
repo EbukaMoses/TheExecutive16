@@ -1,0 +1,35 @@
+.herocontent {
+  margin-top: 5rem;
+}
+.hero {
+  background: #f2f5f8;
+}
+.herocard {
+  width: 100%;
+  max-width: 300px;
+  background: linear-gradient(#ff0000, #6b0505);
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.herocard img {
+  width: 100%;
+}
+.hero-details {
+  position: relative;
+  color: #fff;
+  padding: 20px 25px;
+}
+
+.hero-details h3 {
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+.hero-details a {
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 5px;
+}
+

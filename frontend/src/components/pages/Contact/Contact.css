@@ -1,0 +1,91 @@
+.contactcard {
+  display: flex;
+  gap: 10%;
+}
+.contactcard .left {
+  width: 60%;
+  padding: 30px;
+  box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
+}
+.contactcard .right {
+  width: 25%;
+}
+.contactcard .input-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  border: 2px solid #e5e5e5;
+  margin-bottom: 15px;
+  padding: 2px 12px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.contactcard .input-group input,
+.contactcard .input-group textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px 0;
+  margin-left: 5px;
+}
+
+.contactcard .input-group textarea {
+  resize: none;
+  height: 200px;
+  padding-left: 15px;
+}
+.contactcard .input-group .message {
+  position: absolute;
+  top: 10px;
+}
+.contactcard .right ul {
+  margin-top: 60px;
+  padding: 0px;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.contactcard .right ul li {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 39.5px;
+}
+.contactcard .right ul li a {
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+}
+.contact li a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.contactcard .right .socials {
+  display: flex;
+  margin-top: 15px;
+}
+.contactcard .right .socials a {
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+  margin-right: 10px;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .contactcard {
+    flex-direction: column;
+    gap: 10%;
+  }
+  .contactcard .left {
+    width: 100%;
+  }
+  .contactcard .right {
+    width: 100%;
+  }
+}
