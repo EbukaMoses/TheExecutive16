@@ -107,29 +107,50 @@ nav .button {
 
 /* --------------------------------MEDIA QUERY-------------------------------------- */
 @media screen and (max-width: 768px) {
+  .top-header a {
+    color: #fff;
+  }
+  .top-header .phone {
+    display: flex;
+    gap: 10px;
+  }
+  .top-header .phone a {
+    gap: 3px;
+    font-size: 10px;
+  }
+  .top-header .social-icons {
+    gap: 2px;
+    font-size: 12px;
+  }
   .header {
+    padding: 0.5% 5%;
     gap: unset;
     justify-content: space-between;
   }
   .header .logo {
-    width: 160px;
+    width: 140px;
+  }
+  .hambuger {
+    display: block;
   }
   .m-nav.display {
     display: flex !important;
   }
   .m-nav {
     width: 100%;
+    justify-content: center;
+    align-items: center;
     display: none;
     flex-direction: column;
-    padding: 50px 50px;
-    background: #c8c7c7;
+    padding: 20px;
+    background: var(--White);
     position: absolute;
     top: 100%;
     right: 0;
     z-index: 999;
-    /* box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.09);
+    box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.09);
     -webkit-box-shadow: -2px -1px 15px 7px rgba(0, 0, 0, 0.163);
-    -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.129); */
+    -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.129);
     transition: display 0.5s;
     -webkit-transition: display 0.5s;
     -moz-transition: display 0.5s;
@@ -137,25 +158,22 @@ nav .button {
     -o-transition: display 0.5s;
   }
 
-  .m-nav .button {
-    margin-top: 10px;
-    margin-left: 0% !important;
-  }
   nav {
     display: block;
   }
   nav .navLink {
+    display: inline-block;
     width: 100%;
-    padding: 5% 0;
+    padding: 3% 5%;
     font-size: 14px;
     font-weight: 700;
     /* color: #fff; */
-    float: left;
+    /* float: left; */
     text-transform: uppercase;
   }
-
-  .hambuger {
-    display: block;
+  .m-nav .button {
+    margin-top: 10px;
+    margin-left: 0% !important;
   }
 
   .divider {
@@ -724,21 +742,6 @@ section {
 
 /* ----------------------------------------------------MEDIA QUERY--------------------------------------------------- */
 @media screen and (max-width: 768px) {
-  .top-header a {
-    color: #fff;
-  }
-  .top-header .phone {
-    display: flex;
-    gap: 10px;
-  }
-  .top-header .phone a {
-    gap: 3px;
-    font-size: 10px;
-  }
-  .top-header .social-icons {
-    gap: 2px;
-    font-size: 12px;
-  }
   .InnerPage {
     height: 20vh;
     padding: 0 10%;
