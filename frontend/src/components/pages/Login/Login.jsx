@@ -33,7 +33,7 @@ const Login = () => {
   const [cpassword, setCpassword] = useState("");
   const [showPass, setShowPass] = useState(true);
   const [showCpass, setShowCpass] = useState(true);
-  const [signIn, setSignin] = useState(true);
+  const [signIn, setSignin] = useState(false);
 
   return (
     <section className="login">
@@ -51,7 +51,7 @@ const Login = () => {
                 <span>
                   {signIn ? (
                     <span>
-                      Already have an account?{" "}
+                      Have an account?{" "}
                       <em onClick={() => setSignin(false)}>SignIn</em>
                     </span>
                   ) : (

@@ -724,6 +724,21 @@ section {
 
 /* ----------------------------------------------------MEDIA QUERY--------------------------------------------------- */
 @media screen and (max-width: 768px) {
+  .top-header a {
+    color: #fff;
+  }
+  .top-header .phone {
+    display: flex;
+    gap: 10px;
+  }
+  .top-header .phone a {
+    gap: 3px;
+    font-size: 10px;
+  }
+  .top-header .social-icons {
+    gap: 2px;
+    font-size: 12px;
+  }
   .InnerPage {
     height: 20vh;
     padding: 0 10%;
