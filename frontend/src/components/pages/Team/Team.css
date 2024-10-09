@@ -2,30 +2,59 @@
   background: #f2f5f8;
 }
 .teamcard {
+  position: relative;
   width: 100%;
-  max-width: 300px;
-  margin-top: 2rem;
+  max-width: 200px;
   background: linear-gradient(#ff0000, #6b0505);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  filter: grayscale(50);
+  -webkit-filter: grayscale(50);
+  z-index: 1;
+  overflow: hidden;
+}
+.teamcard:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 .teamcard img {
   width: 100%;
 }
+.teamcard:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transition: 0.5s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.teamcard .teamimg a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #fff;
+  z-index: 999 !important;
+}
+.teamcard .teamimg a:hover {
+  color: #0a66c2;
+}
 .team-details {
   position: relative;
   color: #fff;
-  padding: 10px 25px;
+  padding: 7px 15px;
 }
 .team-details h3 {
-  font-size: 19px;
-  margin-bottom: 5px;
+  font-size: 18px;
 }
-.team-details a {
+.team-details span {
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
-  margin-bottom: 5px;
+  font-style: italic;
 }
 .team-details a span {
   margin-left: 3px;
@@ -38,7 +67,11 @@ team-socials {
   font-size: 18px;
   margin-bottom: 0.5px;
 }
-
+@media screen and (max-width: 768px) {
+  .teamcard {
+    max-width: 300px;
+  }
+}
 /* ----------------------------------------------------------TEAM DETAILS-------------------------------------------------- */
 .member-card .leftside {
   width: 30%;
@@ -50,10 +83,6 @@ team-socials {
   display: flex;
   gap: 40px;
   margin: 20px 0px 100px;
-  padding: 40px;
-  box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 16px 41px -29px rgba(0, 0, 0, 0.75);
 }
 .member-card .img {
   height: 350px;
@@ -76,13 +105,11 @@ team-socials {
   align-items: center;
   gap: 5px;
 }
-.member-card .socials {
-  display: flex;
-  gap: 15px;
-  margin-top: 8px;
-}
-.member-card .socials a {
-  font-size: 18px;
+
+.member-card .desc {
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: #fff;
 }
 .member-card .desc h1,
 .member-card .desc h4 {
@@ -90,12 +117,71 @@ team-socials {
   gap: 10px;
   align-items: center;
 }
+.member-card .socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+.member-card .socials a {
+  font-size: 25px;
+}
+.member-card .hobby {
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+  background: #eee;
+  padding: 5px;
+}
+.member-card .hobby span {
+  padding: 0px 6px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.member-card .hobby span:nth-child(1) {
+  background: red;
+}
+.member-card .hobby span:nth-child(2) {
+  background: green;
+}
+.member-card .hobby span:nth-child(3) {
+  background: blue;
+}
+.member-card .hobby span:nth-child(4) {
+  background: black;
+}
+.member-card .hobby span:nth-child(5) {
+  background: brown;
+}
+.member-card .hobby span:nth-child(6) {
+  background: rgb(91, 6, 78);
+}
+.member-card .hobby span:nth-child(7) {
+  background: rgb(3, 60, 3);
+}
+.member-card .hobby span:nth-child(8) {
+  background: rgb(154, 87, 6);
+}
+.member-card .hobby span:nth-child(9) {
+  background: rgb(43, 7, 142);
+}
+.member-card .hobby span:nth-child(10) {
+  background: rgb(5, 100, 102);
+}
 .hr {
   margin: 10px 0;
 }
 /* -----------------nav tab------------------------  */
 .tab-navigation {
   position: relative;
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: #fff;
 }
 .tab-menu {
   max-width: 100%;
@@ -111,9 +197,9 @@ team-socials {
   display: inline-block;
   font-size: 1rem;
   font-weight: 500;
-  margin: 0 0.5rem;
-  padding: 10px 20px;
-  background: #e6e6e6;
+  /* margin: 0 0.5rem; */
+  padding: 8px;
+  /* background: #e6e6e6; */
   cursor: pointer;
   user-select: none;
   border-top-right-radius: 10px;
@@ -125,8 +211,8 @@ team-socials {
   -o-transition: all 0.3;
 }
 .tab-btn.active {
-  background: #970101;
-  color: #fff;
+  border-bottom: 2px solid #970101;
+  color: #970101;
 }
 @media screen and (max-width: 768px) {
   .member-card .leftside,

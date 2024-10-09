@@ -187,7 +187,7 @@ nav .button {
     -o-border-radius: 8px;
   }
   .HeadingOne {
-    /* text-align: center; */
+    text-align: center;
     font-size: 24px;
     font-weight: 700;
     /* line-height: 57px; */
@@ -195,11 +195,13 @@ nav .button {
     padding-bottom: 8px;
   }
   .HeadingTwo {
+    /* text-align: center; */
     line-height: 70px;
     font-size: 20px;
     font-weight: 700;
   }
   .HeadingThree {
+    /* text-align: center; */
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -267,6 +269,12 @@ section {
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
   row-gap: 10px;
+}
+.grid6 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
 }
 
 .flex {
@@ -642,6 +650,12 @@ section {
   background-color: transparent;
 }
 
+@media screen and (max-width: 768px) {
+  .newscontent {
+    margin-top: 2rem;
+  }
+}
+
 /* -----------------------------------------footer-----------------------------------  */
 .footercover {
   position: relative;
@@ -753,9 +767,18 @@ section {
   .grid4,
   .grid3 {
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     row-gap: 25px;
+  }
+  .grid6 {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .footer .grid4 {
+    place-items: unset;
   }
 
   .flex {
@@ -770,8 +793,10 @@ section {
     padding: 20% 0;
   }
 
-  .container,
   .container-10 {
+    margin: auto 2%;
+  }
+  .container {
     margin: auto 5%;
   }
 

@@ -13,7 +13,7 @@ import {
 
 const TabConnect = () => {
   return (
-    <TeamTabLayOut>
+   
       <div>
         <div className="contact">
           <a href="">
@@ -45,7 +45,7 @@ const TabConnect = () => {
           </a>
         </div>
       </div>
-    </TeamTabLayOut>
+  
   );
 };
 

@@ -9,9 +9,11 @@ const Blog = () => {
     <section>
       <InnerPage title="Blog" icon={<FaNewspaper />} />
 
-      <Link to="/blog-detail">
-        <News />
-      </Link>
+      <div className="container">
+        <Link to="/blog-detail">
+          <News />
+        </Link>
+      </div>
     </section>
   );
 };

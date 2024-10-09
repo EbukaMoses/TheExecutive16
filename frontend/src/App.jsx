@@ -37,13 +37,13 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team />} />
           {/* <Route path="/team-member" element={<TeamTabLayOut />} /> */}
-          {/* <Route path="/team-member" element={<TeamDetail />} /> */}
-          <Route path="/team-member" element={<TabAbout />} />
+          <Route path="/team-member" element={<TeamDetail />} />
+          {/* <Route path="/team-member" element={<TabAbout />} />
           <Route path="/team-member/education" element={<TabEdu />} />
           <Route path="/team-member/business" element={<TabBiz />} />
           <Route path="/team-member/hobby" element={<TabHobby />} />
           <Route path="/team-member/connect" element={<TabConnect />} />
-          <Route path="/team-member/blog" element={<TabBlog />} />
+          <Route path="/team-member/blog" element={<TabBlog />} /> */}
           <Route path="/heroes" element={<Heroes />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/member" element={<Login />} />

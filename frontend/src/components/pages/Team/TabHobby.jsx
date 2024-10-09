@@ -3,9 +3,9 @@ import TeamTabLayOut from "./TeamTabLayOut";
 
 const TabHobby = () => {
   return (
-    <TeamTabLayOut>
+    
       <div>TabHobby</div>
-    </TeamTabLayOut>
+    
   );
 };
 

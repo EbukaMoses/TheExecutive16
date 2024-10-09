@@ -3,7 +3,7 @@ import TeamTabLayOut from "./TeamTabLayOut";
 
 const TabBiz = () => {
   return (
-    <TeamTabLayOut>
+   
       <div>
        
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut iusto,
@@ -31,7 +31,7 @@ const TabBiz = () => {
           dignissimos asperiores esse repellat officiis cum.
         
       </div>
-    </TeamTabLayOut>
+    
   );
 };
 

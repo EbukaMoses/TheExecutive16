@@ -3,9 +3,8 @@ import TeamTabLayOut from "./TeamTabLayOut";
 
 const TabEdu = () => {
   return (
-    <TeamTabLayOut>
       <div>TabEdu</div>
-    </TeamTabLayOut>
+    
   );
 };
 
