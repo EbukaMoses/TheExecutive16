@@ -10,9 +10,9 @@ const Members = () => {
   return (
     <div>
       <InnerBanner title="Our Members" icon={<FaUsers />} />
-      <Container>
+      <Container className="">
         {location.pathname === "/member" ? (
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 lg:gap-5 mx-auto">
             <MemberCard />
             <MemberCard />
             <MemberCard />

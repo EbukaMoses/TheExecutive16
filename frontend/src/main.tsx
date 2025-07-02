@@ -1,12 +1,12 @@
 import { StrictMode } from "react";
 import "./index.css";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider, ScrollRestoration } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import Layout from "./ui/Layout.tsx";
 import About from "./pages/About.tsx";
 import Market from "./pages/Market.tsx";
-import Photos from "./pages/Photos.tsx";
+import Gallery from "./pages/Gallery.tsx";
 import Members from "./pages/Members.tsx";
 import Heros from "./pages/Heros.tsx";
 import Article from "./pages/Article.tsx";
@@ -16,9 +16,12 @@ import NotFound from "./pages/NotFound.tsx";
 
 const RouterLayout = () => {
   return (
-    <Layout>
-      <Outlet />
-    </Layout>
+    <>
+      <Layout>
+        <Outlet />
+      </Layout>
+      <ScrollRestoration />
+    </>
   );
 };
 
@@ -44,8 +47,8 @@ const router = createBrowserRouter([
         element: <Market />,
       },
       {
-        path: "/photos",
-        element: <Photos />,
+        path: "/gallery",
+        element: <Gallery />,
       },
       {
         path: "/member",

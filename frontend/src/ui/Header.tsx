@@ -17,7 +17,7 @@ const Header = () => {
     { title: "Home", link: "/" },
     { title: "About", link: "/about" },
     { title: "Market", link: "/market" },
-    { title: "Photos", link: "/photos" },
+    { title: "Gallery", link: "/gallery" },
     { title: "Members", link: "/member" },
     { title: "Heros", link: "/Heros" },
     { title: "Article", link: "/article" },
@@ -68,11 +68,10 @@ const Header = () => {
 
       {/* Main Nav Starts here  */}
       <div
-        className={`px-5 md:px-10 py-3 bg-white flex justify-between items-center z-40 ${
-          active
-            ? "fixed top-0 left-0 border-b-2 border-b-DarkRed transition-all duration-200 "
-            : ""
-        }`}
+        className={`px-5 md:px-10 py-3 bg-white flex justify-between items-center !z-50 shadow-md ${active
+          ? "fixed top-0 left-0 border-b-2 border-b-DarkRed transition-all duration-200 "
+          : ""
+          }`}
       >
         <Link to="/">
           <img
@@ -106,9 +105,8 @@ const Header = () => {
               <NavLink
                 to={link}
                 key={title}
-                className={`uppercase relative md:inline-flex text-sm text-Black font-bold duration-200 overflow-hidden group ${
-                  location.pathname === link ? " font-bold" : ""
-                }`}
+                className={`uppercase relative md:inline-flex text-sm text-Black font-bold duration-200 overflow-hidden group ${location.pathname === link ? " font-bold" : ""
+                  }`}
                 onClick={() => setMenu(false)}
               >
                 {title}
@@ -118,7 +116,7 @@ const Header = () => {
             <Button
               title="get started"
               path="/account"
-              icon={<FaLongArrowAltRight />}
+              // icon={<FaLongArrowAltRight />}
               className="bg-DarkRed text-white md:inline-flex"
               onClick={() => setMenu(false)}
             />

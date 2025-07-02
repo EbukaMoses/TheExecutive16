@@ -7,24 +7,25 @@ import {
 } from "react-icons/fa6";
 import { IoMdLocate } from "react-icons/io";
 import { SlBriefcase } from "react-icons/sl";
-import { Link } from "react-router-dom";
 import { Mike } from "../../public/images";
 import { useState } from "react";
 
-const TabAbout = () => {
-  return <div>About2</div>;
-};
-const TabBiz = () => {
-  return <div>Business</div>;
-};
-const TabBlog = () => {
-  return <div>Blog</div>;
-};
+
 const MemberDetailCard = () => {
   const [tab, setTab] = useState("0");
 
-  const memberTab = ({ props }: any) => {
-    switch (props) {
+  const TabAbout = () => {
+    return <div>About</div>;
+  };
+  const TabBiz = () => {
+    return <div>Business</div>;
+  };
+  const TabBlog = () => {
+    return <div>Blog</div>;
+  };
+
+  const memberTab = (tab: string) => {
+    switch (tab) {
       case "0":
         return <TabAbout />;
       case "1":
@@ -37,10 +38,10 @@ const MemberDetailCard = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row gap-10 mt-5 mb-24">
+    <div className="flex flex-col lg:flex-row gap-0 lg:gap-10 mt-0 lg:mt-5 mb-24">
       <div className="w-full lg:w-[30%]">
         <div className="w-[350px] mb-3 overflow-hidden">
-          <img src={Mike} alt="" className="w-full object-cover" />
+          <img src={Mike} alt="" className="w-full object-cover rounded-xl shadow-lg" />
         </div>
       </div>
       <div className="w-full lg:w-[70%]">
@@ -122,33 +123,27 @@ const MemberDetailCard = () => {
             {/* .tab-menu::-webkit-scrollbar {
               display: none;
             } */}
-            <Link to="" onClick={() => setTab("0")}>
-              <li
-                className={`inline-block text-lg font-semibold p-2 cursor-pointer select-none transition-all ${
-                  tab === "0" ? "border-b-2 border-DarkRed text-DarkRed" : ""
-                }`}
-              >
-                About
-              </li>
-            </Link>
-            <Link to="" onClick={() => setTab("1")}>
-              <li
-                className={`inline-block text-lg font-semibold p-2 cursor-pointer select-none transition-all ${
-                  tab === "1" ? "border-b-2 border-DarkRed text-DarkRed" : ""
-                }`}
-              >
-                Business
-              </li>
-            </Link>
-            <Link to="" onClick={() => setTab("2")}>
-              <li
-                className={`inline-block text-lg font-semibold p-2 cursor-pointer select-none transition-all ${
-                  tab === "2" ? "border-b-2 border-DarkRed text-DarkRed" : ""
-                }`}
-              >
-                Blog
-              </li>
-            </Link>
+
+            <li
+              className={`inline-block text-lg font-semibold p-2 cursor-pointer select-none transition-all ${tab === "0" ? "border-b-2 border-DarkRed text-DarkRed" : ""
+                }`} onClick={() => setTab("0")}
+            >
+              About
+            </li>
+
+            <li
+              className={`inline-block text-lg font-semibold p-2 cursor-pointer select-none transition-all ${tab === "1" ? "border-b-2 border-DarkRed text-DarkRed" : ""
+                }`} onClick={() => setTab("1")}
+            >
+              Business
+            </li>
+
+            <li
+              className={`inline-block text-lg font-semibold p-2 cursor-pointer select-none transition-all ${tab === "2" ? "border-b-2 border-DarkRed text-DarkRed" : ""
+                }`} onClick={() => setTab("2")}
+            >
+              Blog
+            </li>
           </ul>
           <div>{memberTab(tab)}</div>
         </div>

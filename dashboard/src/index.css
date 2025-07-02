@@ -9,9 +9,23 @@
 p {
   @apply text-base;
 }
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
+/* .scrollbar-hide::-webkit-scrollbar {
+  @apply display: none;
+} */
 .card {
   @apply bg-white shadow-xl p-5 rounded-lg mx-auto;
 }
+/* .no-scrollbar::-webkit-scrollbar {
+  @apply display: none;
+} */
+
+
+/* IE and Edge */
+/* .no-scrollbar {
+  @apply -ms-overflow-style: none;  
+} */
+
+/* Firefox */
+/* .no-scrollbar {
+  @apply scrollbar-width: none; 
+} */

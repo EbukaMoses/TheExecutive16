@@ -29,7 +29,7 @@ export const updateBlog = async (req, res, next) => {
 export const deleteBlog = async (req, res, next) => {
     try {
       const deletedBlog = await Blog.findByIdAndDelete(req.params.id);
-      res.status(200).json("Blog has been successfully deleted");
+      res.status(200).json("Blog deleted successfully");
     } catch (error) {
       next(error);
     }
@@ -38,7 +38,7 @@ export const deleteBlog = async (req, res, next) => {
 //GET
 export const getBlog = async (req, res, next) => {
      try {
-       const blog = await blog.findById(req.params.id);
+       const blog = await Blog.findById(req.params.id);
        res.status(200).json(blog);
      } catch (error) {
        next(error);

@@ -13,34 +13,35 @@ import suggestionRoute from "./routes/suggestion.js"
 import commentRoute from "./routes/comment.js"
 import hobbyRoute from "./routes/hobby.js"
 import heroRoute from "./routes/heros.js"
+// import path from 'path';
+// import { fileURLToPath } from 'url';
+
+// const app = express();
+
+// Fix __dirname for ES modules
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
+
+
 
 const app = express();
-
 dotenv.config();
 
-const connect = async () => {
-  try {
-    await mongoose.connect(process.env.MONGODB);
-    console.log("Connected to MongoDB");
-  } catch (error) {
-    throw error;
-  }
-};
-
-mongoose.connection.on("disconnected", () => {
-  console.log("mongoDB disconnected!");
-});
-mongoose.connection.on("connected!", () => {
-  console.log("mongoDB connected");
-});
-
-// app.get("/", (req, res) => {
-//   res.send("Hello");
-// });
 
 // Middlewares 
 app.use(express.json())
 app.use(cookieParser())
+// Static file serving
+// app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+
+
+
+
+
+// app.get("/", (req, res) => {
+//   res.send("Hello Bukan");
+// });
+
 
 
 app.use("/auth", authRoute);
@@ -66,8 +67,25 @@ app.use((err,req,res,next)=>{
   });
 })
 
+const connect = async () => {
+  try {
+    await mongoose.connect(process.env.MONGODB);
+    console.log("Connected to MongoDB");
+  } catch (error) {
+    throw error;
+  }
+};
 
-app.listen(process.env.PORT, () => {
+mongoose.connection.on("disconnected", () => {
+  console.log("mongoDB disconnected!");
+});
+mongoose.connection.on("connected!", () => {
+  console.log("mongoDB connected");
+});
+
+
+app.listen(process.env.PORT || 3000, () => {
   connect();
   console.log("Connected to Backend");
+  console.log(`Server is running on port ${process.env.PORT || 3000}`);
 });

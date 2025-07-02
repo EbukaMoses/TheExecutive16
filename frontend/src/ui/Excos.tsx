@@ -31,10 +31,10 @@ const Excos = () => {
       <div className="flex flex-col justify-center items-center">
         <div className="flex items-center">
           <Divider className="bg-DarkRed" />
-          <HeadingThree title="Our Association Lead" className="text-DarkRed" />
+          <HeadingThree title="Current Executives" className="text-DarkRed" />
           <Divider className="bg-DarkRed" />
         </div>
-        <HeadingOne title="Current Executives" className="text-black" />
+        <HeadingOne title="working to serve the Unizik-'16-Set community." className="text-black italic" />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10">

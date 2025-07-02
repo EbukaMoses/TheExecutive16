@@ -5,18 +5,18 @@ const router = express.Router();
 
 
 //CREATE
-router.post("/", createBlog);
+router.post("/create-blog", createBlog);
 
 //UPDATE
-router.put("/:id", updateBlog); 
+router.put("/update-blog/:id", updateBlog); 
 
 //DELETE
-router.delete("/:id", deleteBlog);
+router.delete("/delete-blog/:id", deleteBlog);
 
 //GET
-router.get("/:id", getBlog);
+router.get("/get-blog/:id", getBlog);
 
 //GET ALL
-router.get("/", getBlogs);
+router.get("/get-all-blogs", getBlogs);
 
 export default router;

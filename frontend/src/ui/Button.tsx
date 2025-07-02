@@ -10,7 +10,7 @@ interface Props {
 
 const Button = ({ title, icon, path, className, onClick }: Props) => {
   const newClassName = twMerge(
-    "flex whitespace-nowrap gap-1 text-sm font-bold lg:font-semibold items-center capitalize border-0 border rounded-lg py-1.5 px-3",
+    "flex whitespace-nowrap gap-1 text-sm font-bold lg:font-semibold items-center capitalize border-0 border rounded-lg py-2.5 px-3",
     className
   );
 

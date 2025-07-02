@@ -3,6 +3,7 @@ import Divider from "./Divider";
 import HeadingThree from "./HeadingThree";
 import HeadingOne from "./HeadingOne";
 import { Ameh, Chukz, Ify, Ihuoma, Izzy, Mike } from "../../public/images";
+import HeadingTwo from "./HeadingTwo";
 
 const OurComrades = () => {
   const comrades = [
@@ -28,13 +29,14 @@ const OurComrades = () => {
       id: 4,
       image: Ameh,
       name: "Hon. Ameh Joseph",
-      post: "Student Representative Council (SUG)",
+      post: "(SUG)",
+      // post: "Student Representative Council (SUG)",
     },
     {
       id: 5,
       image: Ify,
       name: "Hon. Ifunanya Okoye",
-      post: "Student Representative Council (SUG)",
+      post: "(SUG)",
     },
     {
       id: 6,
@@ -66,9 +68,13 @@ const OurComrades = () => {
                   alt={name}
                   className="group-hover:scale-110 object-cover duration-300"
                 />
-                <div className="flex flex-col justify-center items-center mx-auto absolute bottom-0 left-5 right-5 mb-4 p-4 text-center bg-DarkGray rounded-2xl">
+                {/* <div className="flex flex-col justify-center items-center mx-auto absolute bottom-0 left-5 right-5 mb-4 p-4 text-center bg-DarkGray rounded-2xl">
                   <HeadingOne title={name} className="text-black" />
                   <HeadingThree title={post} className="text-black" />
+                </div> */}
+                <div className="absolute z-40 bg-DarkRed bottom-0 left-4 right-4 p-3 rounded-xl flex flex-col justify-center items-center">
+                  <HeadingTwo title={name} className="text-white" />
+                  <HeadingThree title={post} className="text-white" />
                 </div>
               </div>
             ))}

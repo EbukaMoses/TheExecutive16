@@ -104,14 +104,15 @@ const Footer = () => {
           <br />
           <br />
           <hr />
-          <div className="flex justify-center items-center text-white text-[10px] pt-4 pb-4">
+          <div className="flex justify-center items-center text-white text-[11px] pt-4 pb-4">
             <span className="text-center">
               copyright &copy; Unziki Business Administration class of 2016.
-              Built by
+              Built by {" "}
               <a href="" className="text-[#868080]">
                 Ebuka Moses
               </a>
-              in loving memory of
+              {" "}
+              in loving memory of {" "}
               <a href="" className="text-[#868080]">
                 Pokapikin
               </a>

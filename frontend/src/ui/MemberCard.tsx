@@ -2,17 +2,21 @@ import { FaBriefcase, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Mike } from "../../public/images";
 import { IoLocation } from "react-icons/io5";
+import { useState } from "react";
+// import MemberModal from "./MemberModal";
 
 const MemberCard = () => {
+  const [modal, setModal] = useState(false)
   return (
     <div>
-      <Link to="/member/id">
-        <div className="relative w-[200px] shadow-lg grayscale-[50] hover:grayscale-0">
+      <Link to="/member/id" className="">
+        {/* <div className="relative w-[200px] shadow-lg grayscale-[50] hover:grayscale-0 cursor-pointer" onClick={() => setModal(true)}> */}
+        <div className="relative w-full lg:w-[200px] shadow-lg grayscale-[50] hover:grayscale-0 cursor-pointer" >
           <div className="teamimg group overflow-hidden">
             <a
               href="https://www.linkedin.com"
               target="_blank"
-              className="absolute top-3 right-3 z-20 text-xl hover:text-[#0a66c2]"
+              className="absolute top-3 right-3 !z-50 text-xl hover:text-[#0a66c2]"
             >
               <FaLinkedin />
             </a>
@@ -34,6 +38,7 @@ const MemberCard = () => {
             </span>
           </div>
         </div>
+        {/* {modal && <MemberModal setModal={setModal} />} */}
       </Link>
     </div>
   );

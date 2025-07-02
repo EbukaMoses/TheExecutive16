@@ -1,5 +1,9 @@
-import express from "express";
+import mongoose from 'mongoose'
 
-const router = express.Router();
+const PostCatSchema = new mongoose.Schema({
+    title: { type: String, required: true }
+},
+    { timestamps: true },
+);
 
-export default router;
+export default mongoose.model("PostCategory", PostCatSchema )

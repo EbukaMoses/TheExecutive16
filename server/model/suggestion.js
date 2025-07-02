@@ -1,5 +1,10 @@
-import express from "express";
+import mongoose from 'mongoose'
 
-const router = express.Router();
+const SuggestionSchema = new mongoose.Schema({
+    title: {type: String, required: true},
+    desc:{ type: String, required: true}
+},
+    { timestamps: true },
+)
 
-export default router;
+export default mongoose.model("Suggestion", SuggestionSchema)

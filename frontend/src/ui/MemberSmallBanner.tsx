@@ -91,7 +91,7 @@ const MemberSmallBanner = () => {
   //     fetchData();
   //   }, []);
   return (
-    <div className="w-full border-b-2 border-t-2 border-red-800 shadow-lg bg-LightGray">
+    <div className="w-full border-b-2 border-t-2 border-red-800 shadow-lg bg-white">
       <Carousel
         responsive={responsive}
         infinite={true}
@@ -105,7 +105,7 @@ const MemberSmallBanner = () => {
           <Link
             key={item?.id}
             to={`category/${item?.id}`}
-            className="flex items-center whitespace-nowrap gap-3 py-3 px-6 border border-gray-100 mr-1 flex-1 rounded-md hover:border-DarkGray hover:shadow-lg bg-white"
+            className="flex items-center whitespace-nowrap gap-3 py-3 px-6 border border-gray-100 mr-1 flex-1 rounded-md hover:border-DarkGray hover:shadow-lg bg-white shadow-md"
           >
             <img
               src={item?.image}
@@ -113,7 +113,7 @@ const MemberSmallBanner = () => {
               className="w-8 z-10 rounded-full object-cover"
             />
             <p className="text-sm font-semibold text-black">
-              {" "}
+
               {item?.name} Okoye
             </p>
           </Link>
