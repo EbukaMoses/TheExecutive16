@@ -1,4 +1,4 @@
-import { uploadToCloudinary } from "../middleware/uploadSingleImg.js";
+import { uploadToCloudinary } from "../middleware/cloudinaryImageUpload.js";
 import Events from "../model/events.js";
 import { createError } from "../utils/error.js";
 

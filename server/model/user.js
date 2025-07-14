@@ -7,20 +7,41 @@ const UserSchema = new mongoose.Schema(
     },
     firstname: {
       type: String,
+      required: [true, "First name is required"],
     },
     lastname: {
       type: String,
+      required: [true, "Last name is required"],
     },
     email: {
       type: String,
-      // unique: true,
+      required: [true, "Email is required"],
+      trim: true,
+      lowercase: true,
+      unique: true,
+      minLength: [5, "Email must be at least 5 characters long"],
+      maxLength: [25, "Email must be at most 15 characters long"],
+      match: [
+        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+        "Please enter a valid email address",
+      ],
     },
     password: {
       type: String,
-    //   required: true,
+      required: [true, "Password is required"],
+      trim: true,
+      select: false,
     },
     phone: {
-      type: String,
+      type: Number,
+      // required: [true, "Phone is required"],
+      trim: true,
+      minLength: [10, "Phone must be at least 10 characters long"],
+      maxLength: [15, "Phone must be at most 15 characters long"],
+      match: [
+        /^\d{10}$/,
+        "Please enter a valid phone number",
+      ],
     },
     gender: {
       type: String,
@@ -80,12 +101,46 @@ const UserSchema = new mongoose.Schema(
       type: String,
     },
     isAdmin: {
+      type: String,
+      default: "member",
+      // select: false,
+    },
+    approved: {
       type: Boolean,
       default: false,
     },
-    status: {
+    isVerified: {
       type: Boolean,
       default: false,
+      // required: [true, "isVerified is required"],
+    },
+    verificationCode: {
+      type: String,
+      select: false,
+    },
+    verificationCodeValidation: {
+      type: Number,
+      select: false,
+    },
+    forgotPasswordCode: {
+      type: String,
+      select: false,
+    },
+    forgotPasswordCodeValidation: {
+      type: Number,
+      select: false,
+    },
+    accessToken: {
+      type: String,
+      select: false,
+    },
+    resetPasswordCode: {
+      type: String,
+      select: false,
+    },
+    resetPasswordExpire: {
+      type: Date,
+      select: false,
     },
   },
   { timestamps: true }
