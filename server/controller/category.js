@@ -20,7 +20,7 @@ export const updateCategory = async (req, res, next) => {
   try {
     const updatedCategory = await PostCategory.findByIdAndUpdate(
       req.params.id,
-      { $set: title },
+      { $set: {title: req.body.title} },
       { new: true }
     );
     res.status(200).json(updatedCategory);

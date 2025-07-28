@@ -31,9 +31,38 @@ export const createEvent = async (req, res, next) => {
 //UPDATE
 export const updateEvent = async (req, res, next) => {
   try {
+
+    const existingEvent = await Event.findById(id);
+    if (!existingEvent) {
+        return next(createError(404, "Event not found"));
+    }
+
+    // Upload new image if provided and delete old one
+     let newImageUrl = existingEvent.image;
+    let newImagePublicId = existingEvent.imagePublicId;
+         
+
+     if (req.file) {
+            
+        const uploadResult = await uploadToCloudinary(req.file.buffer, "event");
+        newImageUrl = uploadResult.secure_url;
+        newImagePublicId = uploadResult.public_id;
+
+        // Delete old image if public_id exists
+        if (existingEvent.imagePublicId) {
+            await deleteFromCloudinary(existingEvent.imagePublicId);
+        }
+    }
     const updatedEvent = await Events.findByIdAndUpdate(
       req.params.id,
-      { $set: image, title, desc },
+      {
+        $set: {
+          image: newImageUrl,
+          imagePublicId: newImagePublicId,
+          title,
+          desc
+        }
+      },
       { new: true }
     );
     res.status(200).json(updatedEvent);
